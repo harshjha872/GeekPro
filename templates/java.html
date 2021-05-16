@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Java
+{% endblock title %}
+
+{% block body %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="whole">
+        <iframe style='height: 100vh; width: 80%;' src="https://youtube.com/embed/1kkvalOcSog" id="iframe">
+        </iframe>
+        <div class="slider">
+
+            <button id="btn0" class="same">Java Lecture Number 1</button>
+            <button id="btn1" class="same">Java Lecture Number 2</button>
+            <button id="btn2" class="same">Java Lecture Number 3</button>
+            <button id="btn3" class="same">Java Lecture Number 4</button>
+            <button id="btn4" class="same">Java Lecture Number 5</button>
+            <button id="btn5" class="same">Java Lecture Number 6</button>
+            <button id="btn6" class="same">Java Lecture Number 7</button>
+            <button id="btn7" class="same">Java Lecture Number 8</button>
+            <button id="btn8" class="same">Java Lecture Number 9</button>
+            <button id="btn9" class="same">Java Lecture Number 10</button>
+            <button id="btn10" class="same">Java Lecture Number 11</button>
+            <button id="btn11" class="same">Java Lecture Number 12</button>
+            <button id="btn12" class="same">Java Lecture Number 13</button>
+            <button id="btn13" class="same">Java Lecture Number 14</button>
+            <button id="btn14" class="same">Java Lecture Number 15</button>
+            <button id="btn15" class="same">Java Lecture Number 16</button>
+            <button id="btn16" class="same">Java Lecture Number 17</button>
+            <button id="btn17" class="same">Java Lecture Number 18</button>
+            <button id="btn18" class="same">Java Lecture Number 19</button>
+            <button id="btn19" class="same">Java Lecture Number 20</button>
+            <button id="btn20" class="same">Java Lecture Number 21</button>
+            <button id="btn21" class="same">Java Lecture Number 22</button>
+            <button id="btn22" class="same">Java Lecture Number 23</button>
+            <button id="btn23" class="same">Java Lecture Number 24</button>
+            <button id="btn24" class="same">Java Lecture Number 25</button>
+            <button id="btn25" class="same">Java Lecture Number 26</button>
+            <button id="btn26" class="same">Java Lecture Number 27</button>
+            <button id="btn27" class="same">Java Lecture Number 28</button>
+            <button id="btn28" class="same">Java Lecture Number 29</button>
+            <button id="btn29" class="same">Java Lecture Number 30</button>
+            <button id="btn30" class="same">Java Lecture Number 31</button>
+            <button id="btn31" class="same">Java Lecture Number 32</button>
+            <button id="btn32" class="same">Java Lecture Number 33</button>
+            <button id="btn33" class="same">Java Lecture Number 34</button>
+            <button id="btn34" class="same">Java Lecture Number 35</button>
+            <button id="btn35" class="same">Java Lecture Number 36</button>
+            <button id="btn36" class="same">Java Lecture Number 37</button>
+            <button id="btn37" class="same">Java Lecture Number 38</button>
+            <button id="btn38" class="same">Java Lecture Number 39</button>
+            <button id="btn39" class="same">Java Lecture Number 40</button>
+            <button id="btn40" class="same">Java Lecture Number 41</button>
+            <button id="btn41" class="same">Java Lecture Number 42</button>
+            <button id="btn42" class="same">Java Lecture Number 43</button>
+            <button id="btn43" class="same">Java Lecture Number 44</button>
+            <button id="btn44" class="same">Java Lecture Number 45</button>
+            <button id="btn45" class="same">Java Lecture Number 46</button>
+            <button id="btn46" class="same">Java Lecture Number 47</button>
+            <button id="btn47" class="same">Java Lecture Number 48</button>
+            <button id="btn48" class="same">Java Lecture Number 49</button>
+            <button id="btn49" class="same">Java Lecture Number 50</button>
+            <button id="btn50" class="same">Java Lecture Number 51</button>
+            <button id="btn51" class="same">Java Lecture Number 52</button>
+            <button id="btn52" class="same">Java Lecture Number 53</button>
+            <button id="btn53" class="same">Java Lecture Number 54</button>
+            <button id="btn54" class="same">Java Lecture Number 55</button>
+            <button id="btn55" class="same">Java Lecture Number 56</button>
+            <button id="btn56" class="same">Java Lecture Number 57</button>
+            <button id="btn57" class="same">Java Lecture Number 58</button>
+            <button id="btn58" class="same">Java Lecture Number 59</button>
+            <button id="btn59" class="same">Java Lecture Number 60</button>
+            <button id="btn60" class="same">Java Lecture Number 61</button>
+            <button id="btn61" class="same">Java Lecture Number 62</button>
+            <button id="btn62" class="same">Java Lecture Number 63</button>
+            <button id="btn63" class="same">Java Lecture Number 64</button>
+            <button id="btn64" class="same">Java Lecture Number 65</button>
+            <button id="btn65" class="same">Java Lecture Number 66</button>
+            <button id="btn66" class="same">Java Lecture Number 67</button>
+            <button id="btn67" class="same">Java Lecture Number 68</button>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SF Pro Display', 'sans serif';
+    }
+
+    .same {
+        display: visible;
+    }
+
+    .whole {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .slider {
+        height: 100vh;
+        width: 22%;
+        overflow: auto;
+    }
+
+    button {
+        font-size: 17px;
+        width: 100%;
+        height: 100px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: white;
+        border: none;
+        transition: all 0.25s;
+    }
+
+    button:hover {
+        background-color: rgb(121, 121, 121);
+    }
+</style>
+<script>
+
+    const urlLog = {
+        btn0: 'https://youtube.com/embed/1kkvalOcSog',
+        btn1: 'https://youtube.com/embed/HmF3yQ_nj5Q',
+        btn2: 'https://youtube.com/embed/D0GU-A8XNIA',
+        btn3: 'https://youtube.com/embed/neTl7g7dGqI',
+        btn4: 'https://youtube.com/embed/haI01OWwFPk',
+        btn5: 'https://youtube.com/embed/1KUQrCjbIZA',
+        btn6: 'https://youtube.com/embed/wocR5kkgtvU',
+        btn7: 'https://youtube.com/embed/VtDBsy_enkE',
+        btn8: 'https://youtube.com/embed/Pa0lUMWmmm0',
+        btn9: 'https://youtube.com/embed/rn9h0TSftyw',
+        btn10: 'https://youtube.com/embed/rX9Vq-99szE',
+        btn11: 'https://youtube.com/embed/oAl0umTfW4U',
+        btn12: 'https://youtube.com/embed/OQbwl4XTkKw',
+        btn13: 'https://youtube.com/embed/VJnSheKQc4U',
+        btn14: 'https://youtube.com/embed/3sMxJxeUOLg',
+        btn15: 'https://youtube.com/embed/YqBVgUh64Ks',
+        btn16: 'https://youtube.com/embed/lrIlVcsZrx0',
+        btn17: 'https://youtube.com/embed/HD5IyaOgdPQ',
+        btn18: 'https://youtube.com/embed/T9fRL52TP_M',
+        btn19: 'https://youtube.com/embed/qRCEdWQ0f4Q',
+        btn20: 'https://youtube.com/embed/iqp7NQCN2ck',
+        btn21: 'https://youtube.com/embed/xftdnEpZRuA',
+        btn22: 'https://youtube.com/embed/fuDNAKStpq0',
+        btn23: 'https://youtube.com/embed/RtbgKUpp-1c',
+        btn24: 'https://youtube.com/embed/9EzGgz5th_s',
+        btn25: 'https://youtube.com/embed/_9R_in_7cT4',
+        btn26: 'https://youtube.com/embed/IPJYL18NCpw',
+        btn27: 'https://youtube.com/embed/VrLNbewZRCw',
+        btn28: 'https://youtube.com/embed/neOvVLpy918',
+        btn29: 'https://youtube.com/embed/eIO9dNLkhDQ',
+        btn30: 'https://youtube.com/embed/4VBdNbWeTZw',
+        btn31: 'https://youtube.com/embed/thqLx4zUeY0',
+        btn32: 'https://youtube.com/embed/yY6XMBUCNYE',
+        btn33: 'https://youtube.com/embed/E2tYw6pEW6I',
+        btn34: 'https://youtube.com/embed/7m1Zmf_Z3B0',
+        btn35: 'https://youtube.com/embed/sZr8G7sYGzU',
+        btn36: 'https://youtube.com/embed/wHSzdVXIMEA',
+        btn37: 'https://youtube.com/embed/V7yVbG9_xkM',
+        btn38: 'https://youtube.com/embed/fGcKEFwIhhI',
+        btn39: 'https://youtube.com/embed/lhSx1HWaMDw',
+        btn40: 'https://youtube.com/embed/Swzy7cirX2U',
+        btn41: 'https://youtube.com/embed/t4GstSJcD4Y',
+        btn42: 'https://youtube.com/embed/REA5X7uVhHk',
+        btn43: 'https://youtube.com/embed/XMZ_Mca0NO4',
+        btn44: 'https://youtube.com/embed/E-vjIdzN3w0',
+        btn45: 'https://youtube.com/embed/oR2CVVjCsCA',
+        btn46: 'https://youtube.com/embed/X5urP793On8',
+        btn47: 'https://youtube.com/embed/gvfmkKRL-GU',
+        btn48: 'https://youtube.com/embed/eTax2KLlzpo',
+        btn49: 'https://youtube.com/embed/KFoN6hQ3yAs',
+        btn50: 'https://youtube.com/embed/wIjJaw1-QXU',
+        btn51: 'https://youtube.com/embed/L95658yXRgI',
+        btn52: 'https://youtube.com/embed/wHXmJh1JTkg',
+        btn53: 'https://youtube.com/embed/d_1vuKZdtBA',
+        btn54: 'https://youtube.com/embed/B-2ETnYOM_Q',
+        btn55: 'https://youtube.com/embed/ASStMxg9C2E',
+        btn56: 'https://youtube.com/embed/45qHv6VqS50',
+        btn57: 'https://youtube.com/embed/HYXwIMZpBxk',
+        btn58: 'https://youtube.com/embed/px4W-HXRWKk',
+        btn59: 'https://youtube.com/embed/5NOLuoG6fcQ',
+        btn60: 'https://youtube.com/embed/O6DpXvlwWYg',
+        btn61: 'https://youtube.com/embed/G-1EUkmOqhA',
+        btn62: 'https://youtube.com/embed/md2AX8mJm_4',
+        btn63: 'https://youtube.com/embed/EUlD6WoBdWA',
+        btn64: 'https://youtube.com/embed/NeB7kgiCXTU',
+        btn65: 'https://youtube.com/embed/PHmeJoxY_pg',
+        btn66: 'https://youtube.com/embed/EklNxkf6wS8',
+        btn67: 'https://youtube.com/embed/W1NXZnmKcGM',
+    }
+    const modal = document.querySelectorAll('.same');
+    const change = document.getElementById('iframe');
+    for (let i = 0; i < modal.length; i++) {
+        modal[i].addEventListener('click', function () {
+            change.src = urlLog[modal[i].id];
+
+        });
+    }
+</script>
+
+{% endblock body %}

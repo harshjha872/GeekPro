@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.shortcuts import render,get_object_or_404
 from django.views.generic import ListView,DetailView
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
@@ -9,9 +10,12 @@ from django.contrib.auth.models import User
 
 from .models import Article,Contact
 
+def index(request):
+    return render(request,'home.html')
+
 class ArticleListView(ListView):
     model=Article
-    template_name='home.html'
+    template_name='blogs.html'
     ordering=['-date_added']
     paginate_by=4
 
@@ -64,7 +68,7 @@ class ArticleUpdateView(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
 class ArticleDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
     model=Article
     template_name='article_delete.html'
-    success_url=reverse_lazy('home')
+    success_url=reverse_lazy('blogs')
 
     
     def test_func(self):

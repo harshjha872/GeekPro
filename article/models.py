@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 class Article(models.Model):
     title=models.CharField(max_length=80)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    image = models.ImageField(default='default2.jpg', upload_to='article_pics')
+    image = models.ImageField(default='default2.jpeg', upload_to='article_pics')
     content=models.TextField()
     date_added=models.DateTimeField(default=timezone.now)
 
@@ -15,7 +15,7 @@ class Article(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('home')
+        return reverse('blogs')
 
 class Contact(models.Model):
     name=models.CharField(max_length=50)

@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.mainpage {
+  background-color:white;
+  background-size: cover;
+  height: 100vh;
+  /* opacity: 0.7;
+    z-index: -1; */
+}
+/* .mainpage::before {
+  content: "";
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+} */
+.mainpage::after {
+  content: "";
+  display: block;
+  height: 90vh;
+  width: 100%;
+  background:linear-gradient(to top left, #2869b4, #7dd56f);
+  opacity: 1;
+}
+header {
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  /* align-items: center;
+    justify-content: center; */
+  background: rgba(2, 35, 77, 0.5);
+  /* background-color: black;
+    opacity: 0.5; */
+}
+
+/* header::before{
+    content: "";
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+
+} */
+.menu {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.businessLogo {
+  /* font-weight: bold; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 37px;
+  /*padding-top: 21px;
+    padding-left: 23px; 
+    margin-top: 20px; */
+  margin-right: 275px;
+  /* opacity: 1; */
+  /* color: black; */
+}
+
+.businessLogo a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+  text-shadow: green;
+}
+
+.businessLogo a:hover {
+  color: rgb(54, 50, 50);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul {
+  display: flex;
+  flex-flow: row;
+  list-style-type: none;
+  padding-left: 263px;
+  padding: 13px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul li {
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+  opacity: 1;
+}
+
+.nav ul li a:hover {
+  color: crimson;
+}
+
+.button {
+  background-color: black;
+  text-decoration: none;
+  color: blanchedalmond;
+  height: 50px;
+  width: 132px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 247px;
+  /* margin-top: 17px; */
+}
+
+.button:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.button a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  width: 100%;
+  height: 574px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.visibleheading {
+  /* font-weight: bolder; */
+  font-size: 100px;
+  color: white;
+  margin-top: -150px;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Varela Round", sans-serif;
+  /* font-weight: bold; */
+}
+.heading p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  margin-top: 26px;
+}
+#main::before {
+  content: "";
+  background-color: black;
+  opacity: 0.7;
+}
+.img-con {
+  background: url("images/8.jpg") no-repeat center center/cover;
+  height: 266px;
+  width: 1216px;
+  border-radius: 3px;
+}
+.img-con2 {
+  background: url("images/7.jpg") no-repeat center center/cover;
+  height: 266px;
+  width: 1216px;
+  border-radius: 3px;
+}
+.content {
+  display: flex;
+  padding: 61px 140px;
+  flex-direction: row;
+  margin-top: 29px;
+}
+.about-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 28px;
+  padding-bottom: 73px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+.con-p {
+  font-family: "Varela Round", sans-serif;
+  text-align: start;
+}
+#head {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+.content2 {
+  display: flex;
+  padding: 61px 140px;
+  flex-direction: row;
+  /* margin-top: 29px; */
+}
+.disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
+  height: 400px;
+  /* opacity: 0.7; */
+  background: url("images/9.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 22px;
+  padding: 150px;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 1);
+}
+#Phead {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+#pppphead {
+  font-style: italic;
+}
+.photo-gal {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 133px;
+  width: 100%;
+}
+#box1 {
+  background: url("images/11.jpg") no-repeat center center/cover;
+  height: 407px;
+  width: 33.3%;
+  margin: 0px 5px;
+}
+#box2 {
+  background: url("images/12.jpg") no-repeat center center/cover;
+  height: 407px;
+  width: 33.3%;
+  margin: 0px 5px;
+}
+#box3 {
+  background: url("images/13.jpg") no-repeat center center/cover;
+  height: 407px;
+  width: 33.3%;
+  margin: 0px 5px;
+}
+footer {
+  background-color: rgb(31, 29, 29);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  color: white;
+}
+
+/* GAMESHOW CSS */
+
+.mynavbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(2, 35, 77);
+  position: relative;
+}
+#cricblog {
+  text-decoration: none;
+}
+.weblogo {
+  width: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition-property: all;
+}
+.weblogo a {
+  color: white;
+}
+.weblogo a:hover {
+  color: white;
+  margin-bottom: 5px;
+}
+.loginbtn {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginsignup {
+  text-decoration: none;
+  color: rgb(0, 247, 255);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 247, 255);
+  border-radius: 5px;
+  margin: 5px;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+.loginsignup:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 25px;
+  box-shadow: 0px 10px 13px rgb(69, 67, 179);
+  border-radius: 10px;
+  padding: -5px;
+  background-color: rgb(0, 247, 255);
+}
+#navul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.navbarmenu {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  z-index: 1;
+  /* box-shadow: 0px 13px 29px #353535; */
+  /* background-color: rgb(2, 35, 77); */
+}
+.mya {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 5px;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+.mya:hover {
+  color: rgb(69, 67, 179);
+  text-decoration: none;
+  font-size: 25px;
+  box-shadow: 0px 10px 13px rgb(69, 67, 179);
+  border-radius: 10px;
+  padding: -5px;
+  background-color: rgb(0, 255, 106);
+}
+#MainHeadingGeek {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  left: 12%;
+  top: 37%;
+  font-size: 100px;
+  font-weight: 900;
+  opacity: 1;
+}
+.subLine {
+  color: white;
+  position: absolute;
+  left: 12%;
+  top: 53%;
+  opacity: 1;
+  font-size: 25px;
+}
+#ReadOurBlogs {
+  margin-top: 92px;
+  margin-left: 141px;
+  font-size: 20px;
+}

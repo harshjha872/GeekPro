@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+ Videos
+{% endblock title %}
+
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="goRow">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Javascript</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'javascript' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/c3.png' %}" class="card-img-top" alt="..." id="pImg">
+            <div class="card-body">
+                <h5 class="card-title">C++</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'cpp' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/13.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">React Js</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'reactjs' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/9.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'python' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/java.png' %}" class="card-img-top" alt="..." id="jImg">
+            <div class="card-body">
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'java' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/django.png' %}" class="card-img-top" alt="..." id="dImg">
+            <div class="card-body">
+                <h5 class="card-title">Django</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'django' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/2.png' %}" class="card-img-top" alt="..." id="nImg">
+            <div class="card-body">
+                <h5 class="card-title">Node Js</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'nodejs' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/1.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ruby</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="{% url 'ruby' %}" class="btn btn-primary">Start learning</a>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .goRow {
+        display: flex;
+        flex-direction: row;
+        /* margin-right: 30px; */
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 45px;
+    }
+
+    #nImg {
+        padding: 53px;
+        padding-bottom: 182px;
+    }
+
+    #dImg {
+        padding: 29px;
+        padding-bottom: 140px;
+    }
+
+    /* #pImg {
+        padding: 18px;
+        padding-bottom: 114px;
+    } */
+
+    #jImg {
+        padding: 80px;
+        padding-bottom: 41px;
+    }
+</style>
+
+{% endblock body %}

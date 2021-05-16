@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  JavaScript
+{% endblock title %}
+
+{% block body %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="whole">
+        <iframe style='height: 100vh; width: 80%;' src="https://youtube.com/embed/qoSksQ4s_hg" id="iframe">
+        </iframe>
+        <div class="slider">
+
+            <button id="btn0" class="same">JavaScript Lecture Number 1</button>
+            <button id="btn1" class="same">JavaScript Lecture Number 2</button>
+            <button id="btn2" class="same">JavaScript Lecture Number 3</button>
+            <button id="btn3" class="same">JavaScript Lecture Number 4</button>
+            <button id="btn4" class="same">JavaScript Lecture Number 5</button>
+            <button id="btn5" class="same">JavaScript Lecture Number 6</button>
+            <button id="btn6" class="same">JavaScript Lecture Number 7</button>
+            <button id="btn7" class="same">JavaScript Lecture Number 8</button>
+            <button id="btn8" class="same">JavaScript Lecture Number 9</button>
+            <button id="btn9" class="same">JavaScript Lecture Number 10</button>
+            <button id="btn10" class="same">JavaScript Lecture Number 11</button>
+            <button id="btn11" class="same">JavaScript Lecture Number 12</button>
+            <button id="btn12" class="same">JavaScript Lecture Number 13</button>
+            <button id="btn13" class="same">JavaScript Lecture Number 14</button>
+            <button id="btn14" class="same">JavaScript Lecture Number 15</button>
+            <button id="btn15" class="same">JavaScript Lecture Number 16</button>
+            <button id="btn16" class="same">JavaScript Lecture Number 17</button>
+            <button id="btn17" class="same">JavaScript Lecture Number 18</button>
+            <button id="btn18" class="same">JavaScript Lecture Number 19</button>
+            <button id="btn19" class="same">JavaScript Lecture Number 20</button>
+            <button id="btn20" class="same">JavaScript Lecture Number 21</button>
+            <button id="btn21" class="same">JavaScript Lecture Number 22</button>
+            <button id="btn22" class="same">JavaScript Lecture Number 23</button>
+            <button id="btn23" class="same">JavaScript Lecture Number 24</button>
+            <button id="btn24" class="same">JavaScript Lecture Number 25</button>
+            <button id="btn25" class="same">JavaScript Lecture Number 26</button>
+            <button id="btn26" class="same">JavaScript Lecture Number 27</button>
+            <button id="btn27" class="same">JavaScript Lecture Number 28</button>
+            <button id="btn28" class="same">JavaScript Lecture Number 29</button>
+            <button id="btn29" class="same">JavaScript Lecture Number 30</button>
+            <button id="btn30" class="same">JavaScript Lecture Number 31</button>
+            <button id="btn31" class="same">JavaScript Lecture Number 32</button>
+            <button id="btn32" class="same">JavaScript Lecture Number 33</button>
+            <button id="btn33" class="same">JavaScript Lecture Number 34</button>
+            <button id="btn34" class="same">JavaScript Lecture Number 35</button>
+            <button id="btn35" class="same">JavaScript Lecture Number 36</button>
+            <button id="btn36" class="same">JavaScript Lecture Number 37</button>
+            <button id="btn37" class="same">JavaScript Lecture Number 38</button>
+            <button id="btn38" class="same">JavaScript Lecture Number 39</button>
+            <button id="btn39" class="same">JavaScript Lecture Number 40</button>
+            <button id="btn40" class="same">JavaScript Lecture Number 41</button>
+            <button id="btn41" class="same">JavaScript Lecture Number 42</button>
+            <button id="btn42" class="same">JavaScript Lecture Number 43</button>
+            <button id="btn43" class="same">JavaScript Lecture Number 44</button>
+            <button id="btn44" class="same">JavaScript Lecture Number 45</button>
+            <button id="btn45" class="same">JavaScript Lecture Number 46</button>
+            <button id="btn46" class="same">JavaScript Lecture Number 47</button>
+            <button id="btn47" class="same">JavaScript Lecture Number 48</button>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SF Pro Display', 'sans serif';
+    }
+
+    .same {
+        display: visible;
+    }
+
+    .whole {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .slider {
+        height: 100vh;
+        width: 22%;
+        overflow: auto;
+    }
+
+    button {
+        font-size: 17px;
+        width: 100%;
+        height: 100px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: white;
+        border: none;
+        transition: all 0.25s;
+    }
+
+    button:hover {
+        background-color: rgb(121, 121, 121);
+    }
+</style>
+<script>
+
+    const urlLog = {
+
+        btn0: 'https://youtube.com/embed/qoSksQ4s_hg',
+        btn1: 'https://youtube.com/embed/VB7y0yxZjro',
+        btn2: 'https://youtube.com/embed/ranSYb-EhrU',
+        btn3: 'https://youtube.com/embed/GCcfKNswi4c',
+        btn4: 'https://youtube.com/embed/czlwRUeTCgw',
+        btn5: 'https://youtube.com/embed/JzZFccCEgGA',
+        btn6: 'https://youtube.com/embed/QLatPwsbDrQ',
+        btn7: 'https://youtube.com/embed/u0Mq3FzpsmI',
+        btn8: 'https://youtube.com/embed/_MC0Gw07w8M',
+        btn9: 'https://youtube.com/embed/Z1eV0RBRam0',
+        btn10: 'https://youtube.com/embed/tH-q9QFNUdA',
+        btn11: 'https://youtube.com/embed/B4ZCFdrBmbE',
+        btn12: 'https://youtube.com/embed/Lp-Du2fKoug',
+        btn13: 'https://youtube.com/embed/1v1Bk3Q02Sc',
+        btn14: 'https://youtube.com/embed/LjGaaWX_NbE',
+        btn15: 'https://youtube.com/embed/mbT7sSmVUS8',
+        btn16: 'https://youtube.com/embed/PpbFyLTtpWI',
+        btn17: 'https://youtube.com/embed/U87UmD-5h4o',
+        btn18: 'https://youtube.com/embed/QSuTH0C_3_Y',
+        btn19: 'https://youtube.com/embed/eZBTLsv2ktM',
+        btn20: 'https://youtube.com/embed/KH57lIgwe2g',
+        btn22: 'https://youtube.com/embed/kjdZ1h3CIs4',
+        btn23: 'https://youtube.com/embed/TD3Pfuxgnuc',
+        btn24: 'https://youtube.com/embed/0ZiltZDg9Gg',
+        btn25: 'https://youtube.com/embed/k8MIbEVXhE0',
+        btn26: 'https://youtube.com/embed/HEdikBHsMag',
+        btn27: 'https://youtube.com/embed/EUnV-fCY0Pc',
+        btn28: 'https://youtube.com/embed/t-evBCCQFzM',
+        btn29: 'https://youtube.com/embed/wA5vU_HQfVI',
+        btn30: 'https://youtube.com/embed/yVdU2coJ1VQ',
+        btn31: 'https://youtube.com/embed/SrhHszXkMRU',
+        btn32: 'https://youtube.com/embed/irrxnH-nkqg',
+        btn33: 'https://youtube.com/embed/H63dVFDuJDM',
+        btn34: 'https://youtube.com/embed/SowaJlX1uKA',
+        btn35: 'https://youtube.com/embed/FQuwArzGPYo',
+        btn36: 'https://youtube.com/embed/V0S0LXvnW-o',
+        btn37: 'https://youtube.com/embed/97agDBCyxAE',
+        btn38: 'https://youtube.com/embed/TrGI9Yki-24',
+        btn39: 'https://youtube.com/embed/rBGgguNnutE',
+        btn40: 'https://youtube.com/embed/bf_9IeihQ0M',
+        btn41: 'https://youtube.com/embed/XQEfWd1lh4Q',
+        btn42: 'https://youtube.com/embed/RVA4HoEE_q8',
+        btn43: 'https://youtube.com/embed/Az5J_EkhYCY',
+        btn44: 'https://youtube.com/embed/BhlvQfIaE4k',
+        btn45: 'https://youtube.com/embed/b0pxAb_yy2U',
+        btn46: 'https://youtube.com/embed/uq7omoxwA7A',
+        btn47: 'https://youtube.com/embed/Qikr22Tc3wg',
+
+    }
+    const modal = document.querySelectorAll('.same');
+    const change = document.getElementById('iframe');
+    for (let i = 0; i < modal.length; i++) {
+        modal[i].addEventListener('click', function () {
+            change.src = urlLog[modal[i].id];
+
+        });
+    }
+</script>
+
+{% endblock body %}

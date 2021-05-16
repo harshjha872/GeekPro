@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Django
+{% endblock title %}
+
+{% block body %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="whole">
+        <iframe style='height: 100vh; width: 80%;' src="https://www.youtube.com/embed/UmljXZIypDc" id="iframe">
+        </iframe>
+        <div class="slider">
+
+            <button id="btn0" class="same">Django Lecture Number 1</button>
+            <button id="btn1" class="same">Django Lecture Number 2</button>
+            <button id="btn2" class="same">Django Lecture Number 3</button>
+            <button id="btn3" class="same">Django Lecture Number 4</button>
+            <button id="btn4" class="same">Django Lecture Number 5</button>
+            <button id="btn5" class="same">Django Lecture Number 6</button>
+            <button id="btn6" class="same">Django Lecture Number 7</button>
+            <button id="btn7" class="same">Django Lecture Number 8</button>
+            <button id="btn8" class="same">Django Lecture Number 9</button>
+            <button id="btn9" class="same">Django Lecture Number 10</button>
+            <button id="btn10" class="same">Django Lecture Number 11</button>
+            <button id="btn11" class="same">Django Lecture Number 12</button>
+            <button id="btn12" class="same">Django Lecture Number 13</button>
+            <button id="btn13" class="same">Django Lecture Number 14</button>
+            <button id="btn14" class="same">Django Lecture Number 15</button>
+            <button id="btn15" class="same">Django Lecture Number 16</button>
+            <button id="btn16" class="same">Django Lecture Number 17</button>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SF Pro Display', 'sans serif';
+    }
+
+    .same {
+        display: visible;
+    }
+
+    .whole {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .slider {
+        height: 100vh;
+        width: 22%;
+        overflow: auto;
+    }
+
+    button {
+        font-size: 17px;
+        width: 100%;
+        height: 100px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: white;
+        border: none;
+        transition: all 0.25s;
+    }
+
+    button:hover {
+        background-color: rgb(121, 121, 121);
+    }
+</style>
+<script>
+
+    const urlLog = {
+        btn0: 'https://www.youtube.com/embed/UmljXZIypDc',
+        btn1: 'https://www.youtube.com/embed/a48xeeo5Vnk',
+        btn2: 'https://www.youtube.com/embed/qDwdMDQ8oX4',
+        btn3: 'https://www.youtube.com/embed/1PkNiYlkkjo',
+        btn4: 'https://www.youtube.com/embed/aHC3uTkT9r8',
+        btn5: 'https://www.youtube.com/embed/q4jPR-M0TAQ',
+        btn6: 'https://www.youtube.com/embed/3aVqWaLjqS4',
+        btn7: 'https://www.youtube.com/embed/FdVuKt_iuSI',
+        btn8: 'https://www.youtube.com/embed/CQ90L5jfldw',
+        btn9: 'https://www.youtube.com/embed/-s7e_Fy6NRU',
+        btn10: 'https://www.youtube.com/embed/acOktTcTVEQ',
+        btn11: 'https://www.youtube.com/embed/-tyBEsHSv7w',
+        btn12: 'https://www.youtube.com/embed/Sa_kQheCnds',
+        btn13: 'https://www.youtube.com/embed/D2lwk1Ukgz0',
+        btn14: 'https://www.youtube.com/embed/NhidVhNHfeU',
+        btn15: 'https://www.youtube.com/embed/kt3ZtW9MXhw',
+        btn16: 'https://www.youtube.com/embed/6DI_7Zja8Zc'
+    }
+    const modal = document.querySelectorAll('.same');
+    const change = document.getElementById('iframe');
+    for (let i = 0; i < modal.length; i++) {
+        modal[i].addEventListener('click', function () {
+            change.src = urlLog[modal[i].id];
+
+        });
+    }
+</script>
+
+{% endblock body %}

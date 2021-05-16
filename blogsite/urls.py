@@ -23,8 +23,10 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('article.urls')),
+    path('videos/',include('videos.urls')),
     path('accounts/',include('django.contrib.auth.urls')),
     path('accounts/',include('accounts.urls')),
+    path('GoogleAccounts/', include('allauth.urls')),
     path('profile/', views.profile, name='profile'),
     path('password_reset/',auth_views.PasswordResetView.as_view(template_name='password_reset.html'),name='password_reset'),
     path('password_reset/done/',auth_views.PasswordResetDoneView.as_view(template_name='password_reset_done.html'),name='password_reset_done'),

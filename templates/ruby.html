@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Ruby
+{% endblock title %}
+
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="whole">
+        <iframe style='height: 100vh; width: 80%;' src="https://www.youtube.com/embed/CIe1DxrSrhs" id="iframe">
+        </iframe>
+        <div class="slider">
+
+            <button id="btn0" class="same">Ruby Lecture Number 1</button>
+            <button id="btn1" class="same">Ruby Lecture Number 2</button>
+            <button id="btn2" class="same">Ruby Lecture Number 3</button>
+            <button id="btn3" class="same">Ruby Lecture Number 4</button>
+            <button id="btn4" class="same">Ruby Lecture Number 5</button>
+            <button id="btn5" class="same">Ruby Lecture Number 6</button>
+            <button id="btn6" class="same">Ruby Lecture Number 7</button>
+            <button id="btn7" class="same">Ruby Lecture Number 8</button>
+            <button id="btn8" class="same">Ruby Lecture Number 9</button>
+            <button id="btn9" class="same">Ruby Lecture Number 10</button>
+            <button id="btn10" class="same">Ruby Lecture Number 11</button>
+            <button id="btn11" class="same">Ruby Lecture Number 12</button>
+            <button id="btn12" class="same">Ruby Lecture Number 13</button>
+            <button id="btn13" class="same">Ruby Lecture Number 14</button>
+            <button id="btn14" class="same">Ruby Lecture Number 15</button>
+            <button id="btn15" class="same">Ruby Lecture Number 16</button>
+            <button id="btn16" class="same">Ruby Lecture Number 17</button>
+            <button id="btn17" class="same">Ruby Lecture Number 18</button>
+            <button id="btn18" class="same">Ruby Lecture Number 19</button>
+            <button id="btn19" class="same">Ruby Lecture Number 20</button>
+            <button id="btn20" class="same">Ruby Lecture Number 21</button>
+            <button id="btn21" class="same">Ruby Lecture Number 22</button>
+            <button id="btn22" class="same">Ruby Lecture Number 23</button>
+            <button id="btn23" class="same">Ruby Lecture Number 24</button>
+            <button id="btn24" class="same">Ruby Lecture Number 25</button>
+            <button id="btn25" class="same">Ruby Lecture Number 26</button>
+            <button id="btn26" class="same">Ruby Lecture Number 27</button>
+            <button id="btn27" class="same">Ruby Lecture Number 28</button>
+            <button id="btn28" class="same">Ruby Lecture Number 29</button>
+            <button id="btn29" class="same">Ruby Lecture Number 30</button>
+            <button id="btn30" class="same">Ruby Lecture Number 31</button>
+            <button id="btn31" class="same">Ruby Lecture Number 32</button>
+            <button id="btn32" class="same">Ruby Lecture Number 33</button>
+            <button id="btn33" class="same">Ruby Lecture Number 34</button>
+            <button id="btn34" class="same">Ruby Lecture Number 35</button>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SF Pro Display', 'sans serif';
+    }
+
+    .same {
+        display: visible;
+    }
+
+    .whole {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .slider {
+        height: 100vh;
+        width: 22%;
+        overflow: auto;
+    }
+
+    button {
+        font-size: 17px;
+        width: 100%;
+        height: 100px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: white;
+        border: none;
+        transition: all 0.25s;
+    }
+
+    button:hover {
+        background-color: rgb(121, 121, 121);
+    }
+</style>
+<script>
+
+    const urlLog = {
+        btn0: 'https://www.youtube.com/embed/CIe1DxrSrhs',
+        btn1: 'https://www.youtube.com/embed/FTMpGNDw1_8',
+        btn2: 'https://www.youtube.com/embed/IXyPLDJDxcM',
+        btn3: 'https://www.youtube.com/embed/wGlXK-gXj6Y',
+        btn4: 'https://www.youtube.com/embed/-AllFkNLDKk',
+        btn5: 'https://www.youtube.com/embed/4mWc6Q9shcQ',
+        btn6: 'https://www.youtube.com/embed/rjLB_bD3SLU',
+        btn7: 'https://www.youtube.com/embed/9HB4iIAxuh0',
+        btn8: 'https://www.youtube.com/embed/qDLYmBm4NF8',
+        btn9: 'https://www.youtube.com/embed/GnuCA8eedNs',
+        btn10: 'https://www.youtube.com/embed/u2ezYnbVGoM',
+        btn11: 'https://www.youtube.com/embed/Y2UwkvxIdJ8',
+        btn12: 'https://www.youtube.com/embed/SP3Vf2KcYeU',
+        btn13: 'https://www.youtube.com/embed/BtHKhsDUPwQ',
+        btn14: 'https://www.youtube.com/embed/e1EpXUgSfN8',
+        btn15: 'https://www.youtube.com/embed/eG14yPuy0vk',
+        btn16: 'https://www.youtube.com/embed/Ss-IHmrSTow',
+        btn17: 'https://www.youtube.com/embed/VhI3a1yGNrU',
+        btn18: 'https://www.youtube.com/embed/wsSugkZT1cQ',
+        btn19: 'https://www.youtube.com/embed/eBtz-QBbWV0',
+        btn20: 'https://www.youtube.com/embed/3bXd6h8Zsfk',
+        btn21: 'https://www.youtube.com/embed/CIYbn88_26w',
+        btn22: 'https://www.youtube.com/embed/LqUT1K_Q7-M',
+        btn23: 'https://www.youtube.com/embed/yK5eMYUww6k',
+        btn24: 'https://www.youtube.com/embed/7wbX3OMgqn0',
+        btn25: 'https://www.youtube.com/embed/92li0A8d4io',
+        btn26: 'https://www.youtube.com/embed/FW9hDsMY1is',
+        btn27: 'https://www.youtube.com/embed/J7R94i2bhlI',
+        btn28: 'https://www.youtube.com/embed/sc5RhTIBf4c',
+        btn29: 'https://www.youtube.com/embed/Js2eKsgHrFo',
+        btn30: 'https://www.youtube.com/embed/_RuW7zIdVWI',
+        btn31: 'https://www.youtube.com/embed/kNFMNE8O8Vc',
+        btn32: 'https://www.youtube.com/embed/Zkk7whVb3f4',
+        btn33: 'https://www.youtube.com/embed/Cq_dKYAqMrI',
+        btn34: 'https://www.youtube.com/embed/9pKLGhh5mrM'
+    }
+    const modal = document.querySelectorAll('.same');
+    const change = document.getElementById('iframe');
+    for (let i = 0; i < modal.length; i++) {
+        modal[i].addEventListener('click', function () {
+            change.src = urlLog[modal[i].id];
+
+        });
+    }
+</script>
+{% endblock body %}
